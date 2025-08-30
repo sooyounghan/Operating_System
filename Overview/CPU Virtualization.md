@@ -27,6 +27,3 @@
 3. 하나의 CPU 또는 소규모 CPU 집합을 무한 개의 CPU가 존재하는 것처럼 변환하여 동시에 많은 수의 프로그램을 실행시키는 것을 CPU 가상화(CPU Vritualization)
 4. 프로그램을 실행하고, 멈추고, 어떤 프로그램을 실행시킬 것인가를 운영체제에게 알려주기 위해서는 원하는 바를 운영체제에게 전달할 수 있는 인터페이스(API)가 필요
 5. 특정 순간에 여러 프로그램을 실행되기를 원할 때, 실행 순서는 운영체제의 정책(Policy)에 달려 있음
-<div align="center">
-<img src="https://github.com/user-attachments/assets/68b5df30-cf0f-41e0-ac16-896d945fa6a3">
-</div>
