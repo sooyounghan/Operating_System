@@ -24,7 +24,7 @@
 
 6. 프로세스 상태 추이 - CPU 이용과 입출력 작업을 할 떄
 <div align="center">
-<img src="">
+<img src="https://github.com/user-attachments/assets/2ee77525-5027-4892-a188-7d6d1d5e8c6b">
 </div>
 
   - 첫 번째 프로세스가 어느 정도 실행한 후 입출력을 요청
