@@ -7,7 +7,7 @@
 
 2. SJF에 선점 기능을 추가한 것 : 최단 잔여시간 우선(Shortest Time-to-Completion First, STCF)
    - 선점형 최단 작업 우선(PSJF)으로 알려진 스케줄러
-   - 언제든 새로운 작업이 시스템에 드렁오면, 이 스케줄러는 남아 있는 작업과 새로운 작업의 잔여 실행 시간을 계산한 뒤, 그 중 가장 적은 잔여 실행 시강늘 가진 작업을 스케줄
+   - 언제든 새로운 작업이 시스템에 드렁오면, 이 스케줄러는 남아 있는 작업과 새로운 작업의 잔여 실행 시간을 계산한 뒤, 그 중 가장 적은 잔여 실행 시간을 가진 작업을 스케줄
 <div align="center">
 <img src="https://github.com/user-attachments/assets/d4b0294c-d86a-4dbf-a930-c46a09a08112">
 </div>
