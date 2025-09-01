@@ -3,7 +3,7 @@
 -----
 1. 가장 기초적인 스케줄링 알고리즘으로, 선도착선처리(First Come First Served, FCFS) 스케줄링이라고도 알려져 있음
 2. 단순하고 구현하기 쉬우며, 설정한 기본 가정 하에서 잘 동작
-3. 간단한 예) 시스템에 3개의 작업 A, B, C가 거의 동시에 도착했다고 가정($T_{arrival} = 0)
+3. 간단한 예) 시스템에 3개의 작업 A, B, C가 거의 동시에 도착했다고 가정($T_{arrival} = 0$)
    - 간발의 차이로 A, B, C 순서대로 도착했다고 가정하며, 각 작업은 10초 동안 실행된다고 가정
 <div align="center">
 <img src="https://github.com/user-attachments/assets/b2e02902-777c-4d9c-8557-c1376c925e6f">
