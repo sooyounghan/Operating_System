@@ -5,10 +5,6 @@
    - 초기 일괄처리 컴퓨터 시스템에서 의미가 있었음
 2. 그러나 시분할 컴퓨터 등장으로 사용자는 터미널에서 작업하게 되어 시스템에게 상호작용을 원할히 하기 위한 성능을 요구하게 됨 : 응답 시간(Response Time)이라는 새로운 평가 기준
 3. 응답 시간 : 작업이 도착할 때부터 처음 스케줄 될 때까지 시간 ($T_{response} = T_{firsturn} - T_{arrival}$)
-<div align="center">
-<img src="https://github.com/user-attachments/assets/6be40b64-2451-4f18-a3cc-b5ffb3eaad7b">
-</div>
-
    - A는 시간 0, B와 C는 시간 10에 도착할 때, 각 작업의 응답 시간은 A는 0, B는 0, C는 10으로 평균 3.33
 
 4. STCF를 비롯한 비슷한 류의 정책들은 응답 시간이 짧을 수 있음
