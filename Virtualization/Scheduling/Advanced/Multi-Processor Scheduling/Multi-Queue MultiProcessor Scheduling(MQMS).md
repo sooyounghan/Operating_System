@@ -36,7 +36,7 @@
 <img src="https://github.com/user-attachments/assets/08c91aa6-815e-4749-8be5-f849b65bb1bc">
 </div>
 
-   - A가 B와 D보다 2배의 CPU를 차지하고 있는 결과가 나
+   - A가 B와 D보다 2배의 CPU를 차지하고 있는 결과가 나옴
    - A와 C가 모두 종료하여 B와 D가 남았다고 가정
 <div align="center">
 <img src="https://github.com/user-attachments/assets/037b724c-822e-4ead-be30-5aea45e68922">
