@@ -59,7 +59,7 @@
      + 헤더는 적어도 할당된 공간의 크기는 저장해야 함(이 경우에는 20)
      + 또한, 해제 속도를 향상시키기 위한 추가 포인터, 부가적인 무결성 검사를 제공하기 위한 매직 넘버, 기타 정보 저장할 수 있음
 ```c
-typedef struct _ _header_t {
+typedef struct __header_t {
     int size;
     int magic;
 } header_t;
@@ -83,9 +83,9 @@ void free(void *ptr) {
      + 이를 빈 공간 리스트로 관리하기 위해 먼저 리스트를 초기화
      + 처음 리스트는 4096 - 헤더크기 길이의 항목을 하나 가지고 있음
 ```c
-typedef struct _ _node_t {
+typedef struct __node_t {
     int size;
-    struct _ _node_t *next;
+    struct __node_t *next;
 } node_t;
 ```
    - 힙을 초기화하고 힙의 빈 공간 리스트에 첫 번째 원소를 넣는 코드
