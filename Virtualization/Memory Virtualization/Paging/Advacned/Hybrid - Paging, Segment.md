@@ -8,6 +8,10 @@
 <img src="https://github.com/user-attachments/assets/16fb2dae-99a8-4a7f-94d4-699f299bc87f">
 </div>
 
+<div align="center">
+<img src="https://github.com/user-attachments/assets/92f907ee-f010-44e7-b8d6-c68bd98576a0">
+</div>
+
    - 한 개의 코드 페이지(VPN 0)가 물리 페이지 10번, 한 개의 힙 페이지(VPN 4)가 23번 물리 페이지에 매핑
    - 가상 주소 공간의 끝 부분에 두 개의 스택 페이지(VPN 14와 15)가 물리 페이지 28번과 4번에 매핑
    - 그리고 페이지 테이블 대부분이 비어있으므로, 엄청난 낭비가 발생 (16 KB 크기 아주 작은 주소 공간에서 발생한 상황)
