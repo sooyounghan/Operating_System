@@ -20,6 +20,10 @@
 <img src="https://github.com/user-attachments/assets/f58f9bdb-2238-4e56-ab6e-5208ee5a8baa">
 </div>
 
+<div align="center">
+<img src="https://github.com/user-attachments/assets/c807ff61-670d-4e76-8bc3-243a1343f08e">
+</div>
+
   - 유의할 점은 도표에서 나타내는 실행 순서가 쓰레드가 유일한 실행 가능 순서가 아니라는 것
   - 스케줄러가 특정 시점에 실행하는 쓰레드에 따라 다양한 순서가 있을 수 있으며, 위처럼 쓰레드가 생성된 후 즉시 실행될 수도 있음
   - 쓰레드 1이 쓰레드 2보다 먼저 생성된 경우라 하더라도 만약 스케줄러가 쓰레드 2를 먼저 실행하면 B가 A보다 먼저 출력될 수도 있음
