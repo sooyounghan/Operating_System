@@ -2,7 +2,7 @@
 ### 쓰레드 생성 API
 -----
 ```c
-1 #include <pthread . h>
+1 #include <pthread.h>
 2 int
 3 pthread_create(           pthread_t *        thread ,
 4                   const   pthread_attr_t *   attr ,
