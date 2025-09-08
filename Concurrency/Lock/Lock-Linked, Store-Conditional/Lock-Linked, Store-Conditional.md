@@ -10,7 +10,7 @@
 
 2. load-linked는 일반 로드 명령어와 같이 메모리 값을 레지스터에 저장
 3. 실제 차이는 store-conditional 명령어에서 나타남
-   - store-conditional 명령어는 동일한 주소에 다른 스토가 없었던 경우에만 저장을 성공
+   - store-conditional 명령어는 동일한 주소에 다른 스토오가 없었던 경우에만 저장을 성공
    - 저장이 성공하면, load-linked가 탑재했던 값을 갱신
    - 성공한 경우에는 store-conditional은 1을 반환하고, ptr이 가리키는 value의 값을 갱신
    - 실패한 경우에는 ptr이 가리키는 value 값이 갱신되지 않고 0을 반환
