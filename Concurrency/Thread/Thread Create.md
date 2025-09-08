@@ -3,7 +3,7 @@
 -----
 1. 한 쓰레드는 A라고 출력하고, 다른 쓰레드는 B라고 출력하는 독립적인 두 개의 쓰레드를 생성하는 프로그램을 실행한다고 가정
 <div align="center">
-<img src="https://github.com/user-attachments/assets/2f48da56-e4f1-473b-84c2-05edd0ae256">
+<img src="https://github.com/user-attachments/assets/332de3d4-e89a-4f73-b3dd-1bdad634867">
 </div>
 
   - 메인 프로그램은 각각 mythread() 함수를 실행할 두 개의 쓰레드를 생성
