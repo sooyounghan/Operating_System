@@ -6,9 +6,10 @@
 1 void lock() {
 2 DisableInterrupts();
 3 }
-4 void unlock() {
-5 EnableInterrupts();
-6 }
+4
+5 void unlock() {
+6 EnableInterrupts();
+7 }
 ```
   - 임계 영역에 진입하기 전 특별한 하드웨어 명령어를 사용하여 인터럽트를 막는다면 임계 영역 내 코드에서는 인터럽트가 발생할 수 없으므로 원자적 실행 가능
   - 모든 동작이 끝난 후에 다시 하드웨어 명령어를 사용하여 인터럽트를 사용 가능하도록 하여 프로그램이 이전처럼 진행할 수 있도록 함
