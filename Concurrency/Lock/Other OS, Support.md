@@ -8,7 +8,7 @@
 
 2. futex에는 두 개의 명령어가 제공
    - futex_wait(address, expected) 명령어 : address 값과 expected 값이 동일한 경우 쓰레드를 잠재우며, 같지 않다면 즉시 리턴
-   - futex_wake(address0 명령어 : 큐에서 대기하고 있는 쓰레드 하나를 깨움
+   - futex_wake(address) 명령어 : 큐에서 대기하고 있는 쓰레드 하나를 깨움
    - Linux에서 사용법
 <div align="center">
 <img src="https://github.com/user-attachments/assets/1c237e4d-08e0-4c41-b829-50494abda4d9">
