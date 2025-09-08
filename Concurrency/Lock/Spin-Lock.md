@@ -4,7 +4,7 @@
 1. 락 구현을 위한 명령어(어셈블리 명령어)를 제공하는 시스템 존재
    - SPARC에서는 load/store unsigned byte 동작을 하는 ldstub
    - x86에서는 원자적 교체 명령어인 xchg
-   - 기본적으로 동일한 일을 수행하며 일바적으로 Test-And-Set이라 불림
+   - 기본적으로 동일한 일을 수행하며 일반적으로 Test-And-Set이라 불림
    - C 코드 일부를 사용한 TestAndSet 동작 정의
 ```c
 1 int TestAndSet(int *old_ptr, int new) {
