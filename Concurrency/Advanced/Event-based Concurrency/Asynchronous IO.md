@@ -7,10 +7,10 @@
    - 이 API는 struct aiocb 또는 전문 용어로 AIO 제어 블럭(AIO Control Block)이라고 불리는 기본 구조 사용
 ```c
 struct aiocb {
-      int         aio_fildes;     /* File descriptor */
-      off_t       aio_offset;     /* File offset */
-      volatile    void *aio_buf;  /* Location of buffer */
-      size_t       aio_nbytes;    /* Length of transfer */
+      int              aio_fildes;     /* File descriptor */
+      off_t            aio_offset;     /* File offset */
+      volatile void    *aio_buf;       /* Location of buffer */
+      size_t           aio_nbytes;     /* Length of transfer */
 };
 ```
   - 파일에 대한 비동기 읽기 요청을 하려면 응용 프로그램이 먼저 이 자료 구조에 읽고자 하는 파일의 파일 디스크럽터(aio_fildes), 파일 내 위치(aio_offset)와 더불어 요청의 길이(aio_nbytes), 마지막으로 읽기 결과로 얻은 데이터를 저장할 대상 메모리 위치(aio_buf)와 같은 관련 정보를 채워 넣어야 함
