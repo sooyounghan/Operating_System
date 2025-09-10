@@ -74,7 +74,7 @@
    - 디스크가 한 번 회전하는데 걸리는 시간을 ms로 계산 (디스크의 RPM 또는 분당 회전수만 알고 있는 상황)
    - 10 K RPM 디스크(분당 10,000번 회전)를 예시로 가정
      + 먼저 식의 좌변에 원하는 단위를 기록 ($\frac{Time (ms)}{1 Rotation}$) 하되, 상쇄할 수 있는 것들은 찾아 상쇄
-     + 좌변에 회전을 분모로 해놓은 것처럼 우변에도 똑같이 설정 ($\frac{Time (1 minute)}{10,000 Rotation}$) 후, 분을 초로 바꾼 뒤 (($\frac{60 seconds}{1 minute}$), 다시 msec로 바꾸어 ($\frac{1000 ms}{1 second}$)라고 씀
+     + 좌변에 회전을 분모로 해놓은 것처럼 우변에도 똑같이 설정 ($\frac{Time (1 minute)}{10,000 Rotation}$) 후, 분을 초로 바꾼 뒤 ($\frac{60 seconds}{1 minute}$), 다시 msec로 바꾸어 ($\frac{1000 ms}{1 second}$)라고 씀
      + 최종 결과
 <div align="center">
 <img src="https://github.com/user-attachments/assets/bd668062-3405-45d1-ab1e-1e64dd6f5fe8">
