@@ -3,7 +3,7 @@
 -----
 1. 파일이 있으면, 그 파일들을 읽고나 쓰고 싶을 것
 2. 커맨드 라인을 사용 중이면 cat이라는 프로그램을 사용해 파일 내용을 화면에 Dump 가능
-```
+```bash
 prompt> echo hello > foo
 prompt> cat foo
 hello
@@ -19,7 +19,7 @@ prompt>
      + 인자 : -f를 사용하면 fork된 자식 프로세스 추적 가능 / -t를 사용하면 호출 시각 / -e trace=open,close,read,write라고 하면 시스템 콜은 무시하고 해당 시스템 콜만 추적
 
 4. 다음의 예를 통해 strace를 사용해 cat 동작 확인
-```c
+```bash
 prompt> strace cat foo
 ...
 
