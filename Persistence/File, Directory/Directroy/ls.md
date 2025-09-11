@@ -7,11 +7,11 @@
    - 간단한 반복문을 사용하여 디렉토리 항목을 하나씩 읽은 후 디렉터리의 각 파일의 이름과 아이노드 출력
 ```c
 1 int main(int argc , char *argv[]) {
-2     DIR *dp = opendir(“ . ”);
+2     DIR *dp = opendir(“.”);
 3     assert(dp != NULL);
 4     struct dirent *d;
 5     while ((d = readdir(dp)) != NULL) {
-6           printf(“%d %s\n ”, (int) d−>d_ino , d−>d_name);
+6           printf(“%d %s\n ”, (int) d−>d_ino, d−>d_name);
 7     }
 8     closedir(dp);
 9     return 0;
