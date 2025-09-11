@@ -7,10 +7,10 @@
 ```c
 int fd = open(“foo”, O_CREAT | O_WRONLY | O_TRUNC);
 ```
-  - open()은 다수의 플래그를 받음
-  - O_CREAT : 파일을 생성
-  - O_WRONLY : 파일이 열렸을 때 쓰기만 가능하도록 설정
-  - O_TRUNC : 파일이 이미 존재할 때 파일의 크기를 0 Byte로 줄여서 기존 내용 모두 삭제
+   - open()은 다수의 플래그를 받음
+   - O_CREAT : 파일을 생성
+   - O_WRONLY : 파일이 열렸을 때 쓰기만 가능하도록 설정
+   - O_TRUNC : 파일이 이미 존재할 때 파일의 크기를 0 Byte로 줄여서 기존 내용 모두 삭제
 
 4. 반환값 : 파일 디스크럽터(File Descriptor)
    - 프로세스마다 존재하는 정수로서 UNIX 시스템에서 파일을 접근하는 데 사용
