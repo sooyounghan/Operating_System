@@ -40,3 +40,43 @@
 <div align="center">
 <img src="https://github.com/user-attachments/assets/21272fc9-5b8b-47f0-bf2f-59d8d2c0fe70">
 </div>
+
+-----
+### 적절한 버퍼의 크기
+-----
+1. 디스크에 실제 쓰기 전 LFS는 몇 개의 쓰기 내용으 세그먼트 버퍼에 가지고 있어야 하는가?
+    - 디스크의 물리적 특성에 의해 변함 : 전송 속도 대비 위치 잡기 오버헤드가 얼마나 큰지에 따라 달라짐
+
+2. 예를 들어, 쓰기 시 발생하는 위치 잡기(즉, 회전과 탐색 오버헤드)에 드는 시간이 $T_{position}$초가 걸린다고 가정하며, 디스크 전송 속도는 $R_{peak}$ MB/s라고 가정할 때, 적절한 세그먼트의 크기
+   - 매번 쓰기 시 디스크 헤드를 이동하는데 일정 시간이 소요된다고 가정
+   - 위치 잡기 비용을 상쇄(Amortize)하기 위해서는 클수록 좋으며, 최대 대역폭에 더 근접할 수 있음
+   - D MB 크기를 쓴다고 가정하며, 이 데이터 청크를 쓰는데 소요되는 시간($T_{write}$)은 위치 잡기 시간($T_{position}$)에 D를 전송하는 시간($\frac{D}{R_{peak}}$)을 더한 것으로 즉,
+<div align="center">
+<img src="https://github.com/user-attachments/assets/2fd0d6f5-80c8-44f9-bfb3-f9d36a807435">
+</div>
+
+   - 실제 쓰기 속도는 $R_{effective}$이며, 다음과 식과 같이 쓰인 데이터의 총량을 해당 데이터를 쓰는데 소요된 총 시간으로 나눈 것
+<div align="center">
+<img src="https://github.com/user-attachments/assets/84f0fd00-38fc-4469-b690-c1ec17f3dca3">
+</div>
+
+   - 최대 속도에 근접하도록 유효 속도($R_{effective}$)를 구하고자 할때, 유효 속도가 최대 속도의 특정 비율(F)가 되도록 하는 것
+     + F는 0 < F < 1의 값을 가지며(대체로 F는 최대 속도의 0.9 또는 90%), 수학적으로는 $R_{effective} = F × R_{peak}$ 식에 해당
+   - D에 대해서 식을 정리하면,
+<div align="center">
+<img src="https://github.com/user-attachments/assets/9f5e7f48-e748-4c74-8d55-543f4a1a8a9">
+</div>
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/25fe850c-a502-47e0-8752-c669835ee4c5">
+</div>
+
+
+3. 예제) 디스크 헤드 이동 시간(위치잡기 시간)이 10ms이고, 최대 전송 속도가 100MB/s
+   - 유효 대역폭이 최대 속도의 90%(F = 0.9)가 되기를 원한다고 가정
+   - 이 경우, 다음과 같음
+<div align="center">
+<img src="https://github.com/user-attachments/assets/7562066a-851e-4b9b-a49f-be6e1f4fdd39">
+</div>
+
+   
