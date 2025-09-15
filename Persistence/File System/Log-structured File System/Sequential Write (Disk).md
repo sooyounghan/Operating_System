@@ -64,7 +64,7 @@
      + F는 0 < F < 1의 값을 가지며(대체로 F는 최대 속도의 0.9 또는 90%), 수학적으로는 $R_{effective} = F × R_{peak}$ 식에 해당
    - D에 대해서 식을 정리하면,
 <div align="center">
-<img src="https://github.com/user-attachments/assets/9f5e7f48-e748-4c74-8d55-543f4a1a8a9">
+<img src="https://github.com/user-attachments/assets/5111a102-b7f8-4bad-9008-7c2997253b06">
 </div>
 
 <div align="center">
